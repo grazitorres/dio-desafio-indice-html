@@ -1,8 +1,19 @@
 body{
-    color:white;
+    color: rosybrown;
     background-color: black;
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+p{
+    text-align: justify;
+    color: aliceblue;
+}
+
+mark{
+   background-color:antiquewhite;
+   border-radius: 0.3rem;
+   
 }
