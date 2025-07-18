@@ -36,10 +36,11 @@
             <h2 id="introducao">Introdução ao HTML na Prática</h2>
             <small> <a href="#inicio">Voltar</a></small>
             <p>
-                <abbr title="HyperText Markup Language">HTML</abbr> é uma linguagem de <mark>marcação</mark> usada para
+                <mark><abbr title="HyperText Markup Language">HTML</abbr></mark> é uma linguagem de
+                <strong>marcação</strong> usada para
                 <strong>estruturar</strong> o conteúdo de
                 páginas web. <br>
-                A estrutura do HTML é organizada por tags e atributos (Immagem 1):
+                A estrutura do HTML é organizada por tags e atributos (Imagem 1):
                 <br>
             </p>
             <ul>
@@ -63,51 +64,101 @@
             </ul>
             <figure>
                 <img src="./img/anatomia-tag.jpg" alt="Estrutura de uma tag e seus atributos">
-                <figcaption>Anatomia de uma Tag. Fonte: <a href="https://guilhermemuller.com.br">Guilherme Muller.</a></figcaption>
+                <figcaption>Anatomia de uma Tag. Fonte: <a href="https://guilhermemuller.com.br">Guilherme Muller.</a>
+                </figcaption>
             </figure>
+            <p>Nos próximos tópicos, vamos abordar as <strong>tags</strong> e os principais <strong>atributos</strong>
+                relacionados ao HTML. Além disso,
+                entenderemos um pouco sobre a estrutura e a semântica no HTML.</p>
         </section>
+
+        <hr>
+
         <section>
             <h2 id="formularios">Trabalhando com Formulários em HTML</h2>
             <small> <a href="#inicio">Voltar</a></small>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
-                officiis
-                sapiente
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
-                officiis
-                sapiente
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
-                officiis
-                sapiente
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
-                officiis
-                sapiente
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
-                officiis
-                sapiente
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
-                officiis
-                sapiente
+            <ol>
+                <li>
+                    <code>&lt;form&gt;</code>
+                    <ul>
+                        <li>Define o formulário</li>
+                        <li>Atributos mais comuns:
+                            <ul>
+                                <li><mark>action</mark> :URL para onde os dados do formulário serão enviados</li>
+                                <li><mark>method</mark> : método de envio (GET ou POST).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <code>&lt;input&gt;</code>
+                    <ul>
+                        <li>Campo de entrada multifuncional (texto, senha, e-mail, número, checkbox, rádio etc.).</li>
+                        <li>Atributos importantes:
+                            <ul>
+                                <li><mark>type</mark> : tipo do input (text, password, email, number, checkbox, radio,
+                                    etc.).</li>
+                                <li><mark>name</mark> : nome do campo (usado no backend). </li>
+                                <li><mark>value</mark> : valor enviado</li>
+                                <li><mark>placeholder</mark> : texto de dica dentro do campo.</li>
+                                <li><mark>requered</mark> : torna o campo obrigatório.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <code>checkbox (&lt;input type="checkbox"&gt;)</code>
+                    <ul>
+                        <li>Um campo de seleção com formato quadrado, que o usuário pode marcar ou desmarcar.</li>
+                        <li>Serve para permitir múltiplas escolhas. Ou seja, o usuário pode marcar quantas opções
+                            quiser.
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <code>radio (&lt;input type="radio"&gt;)</code>
+                    <ul>
+                        <li>Um campo de seleção em formato circular, que permite escolher apenas uma opção dentro de um
+                            grupo.</li>
+                        <li>Usado quando o usuário deve escolher só uma alternativa entre várias (exclusão mútua).</li>
+                        <li>Para que funcione corretamente, <u>todos os radio buttons de um mesmo grupo devem ter o
+                                mesmo name.</u></li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <code>&lt;textarea&gt;</code>
+                    <ul>
+                        <li>Área para texto longo (como comentários).</li>
+                        <li>Atributos comuns:
+                            <ul>
+                                <li><mark>name</mark> :</li>
+                                <li><mark>rows</mark> e <mark>cols</mark>: tamanho da caixa</li>
+                                <li><mark>placeholder</mark></li>
+                                <li><mark>requered</mark> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <code>&lt;select&gt; e &lt;option&gt;</code>
+                    <ul>
+                        <li>Juntas, essas tags criam um menu suspenso (também chamado de lista drop-down), onde o
+                            usuário pode escolher uma opção entre várias.</li>
+                        <li>Usado quando você quer apresentar várias opções, mas sem ocupar muito espaço na tela.</li>
+                        <li>Como funciona:
+                            <ul>
+                                <li>a tag <code>&lt;select&gt;</code> cria o campo de seleção.</li>
+                                <li>a tag <code>&lt;option&gt;</code> define cada uma das opções disponíveis dentro do menu.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
-                officiis
-                sapiente
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
-                officiis
-                sapiente
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
-                officiis
-                sapiente
-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
-                officiis
-                sapiente
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
-                officiis
-                sapiente
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
-                officiis
-                sapiente
-            </p>
 
         </section>
         <section></section>
