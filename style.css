@@ -7,6 +7,11 @@ body{
     font-style: normal;
 }
 
+a{
+  text-decoration: none; 
+  color: inherit; 
+}
+
 p{
     text-align: justify;
     color: aliceblue;
@@ -15,5 +20,20 @@ p{
 mark{
    background-color:antiquewhite;
    border-radius: 0.3rem;
-   
+}
+
+code{
+    font-size: 1rem;
+    background-color: rgba(128, 128, 128, 0.389);
+    border-radius: 0.3rem;
+}
+
+li{
+    color: aliceblue;
+    text-align: justify;
+}
+
+figcaption{
+    font-size: 0.8rem;
+
 }

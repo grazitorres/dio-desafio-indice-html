@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <h1>Guia de HTML básico</h1>
+        <h1 id="inicio"> Guia de HTML básico</h1>
     </header>
     <hr>
+    <!-- <code>&lt; &gt;</code>              -->
     <main>
         <section class="indice">
-            <h2>Índice</h2>
+            <h2><i>Índice</i></h2>
             <ol>
                 <li><a href="#introducao">Introdução ao HTML na Prática</a></li>
                 <li><a href="#formularios">Trabalhando com Formulários em HTML</a></li>
@@ -24,19 +28,101 @@
                 <li><a href="#midias">Trabalhando com Mídias utilizando HTML</a></li>
                 <li><a href="tabelas">Criando Tabelas com HTML</a></li>
                 <li><a href="#semantica">Entendendo HTML Semântico</a></li>
+                <li><a href="#referencia">Referências</a></li>
             </ol>
         </section>
         <hr>
         <section class="intro">
             <h2 id="introducao">Introdução ao HTML na Prática</h2>
-            <small>Voltar</small>
+            <small> <a href="#inicio">Voltar</a></small>
             <p>
-                HTML é uma linguagem de <mark>marcação</mark> usada para <strong>estruturar</strong> o conteúdo de páginas web. A estrutura do HTML é organizada por tags e atributos.
-                <br>As <u>tags</u> definem os elementos da página (como p para parágrafo ou h1 para título), enquanto os <u>atributos</u> modificam ou complementam esses elementos (por exemplo, href em um link ou src em uma imagem).
-                O elemento head é responsável por armazenar informações que não são exibidas diretamente na página, mas que são importantes para o funcionamento e interpretação do site pelos navegadores. Nele, colocamos os metadados da página, como a codificação de caracteres, o título da aba, o link para o arquivo CSS externo e também o link para fontes externas, como as do Google Fonts. 
-                O elemento body é onde fica todo o conteúdo visível da página, como textos, imagens, listas, links, botões e outros elementos que o usuário irá visualizar e interagir.
+                <abbr title="HyperText Markup Language">HTML</abbr> é uma linguagem de <mark>marcação</mark> usada para
+                <strong>estruturar</strong> o conteúdo de
+                páginas web. <br>
+                A estrutura do HTML é organizada por tags e atributos (Immagem 1):
+                <br>
             </p>
+            <ul>
+                <li>As <u>tags</u> definem os elementos da página (como <code>&lt;p&gt;</code> para parágrafo ou
+                    <code>&lt;h1&gt;</code> para título), enquanto os
+                    <u>atributos</u> modificam ou complementam esses elementos (por exemplo, <code>href</code> em um
+                    link ou <code>src</code> em
+                    uma imagem).
+                </li>
+                <li>O elemento <code>&lt;head&gt;</code> é responsável por armazenar informações que não são exibidas
+                    diretamente na página, mas que são importantes para o funcionamento e interpretação do site pelos
+                    navegadores. Nele, colocamos os
+                    metadados da página, como a codificação de caracteres, o título da aba do navegador, o link para o
+                    arquivo CSS
+                    externo e também o link para fontes externas, como as do Google Fonts.
+                </li>
+                <li>O elemento <code>&lt;body&gt;</code> é onde fica todo o conteúdo visível da página, como textos,
+                    imagens, listas, links,
+                    botões e outros elementos que o usuário irá visualizar e interagir.
+                </li>
+            </ul>
+            <figure>
+                <img src="./img/anatomia-tag.jpg" alt="Estrutura de uma tag e seus atributos">
+                <figcaption>Anatomia de uma Tag. Fonte: <a href="https://guilhermemuller.com.br">Guilherme Muller.</a></figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2 id="formularios">Trabalhando com Formulários em HTML</h2>
+            <small> <a href="#inicio">Voltar</a></small>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
+                officiis
+                sapiente
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
+                officiis
+                sapiente
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
+                officiis
+                sapiente
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
+                officiis
+                sapiente
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
+                officiis
+                sapiente
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
+                officiis
+                sapiente
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
+                officiis
+                sapiente
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
+                officiis
+                sapiente
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
+                officiis
+                sapiente
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
+                officiis
+                sapiente
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
+                officiis
+                sapiente
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt totam porro dolores. Unde,
+                officiis
+                sapiente
+            </p>
+
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+
+        <hr>
+        <section class="referencias">
+            <h3>Referências</h3>
+            <p>W3SCHOOLS. HTML abbr Tag. Disponível em: https://www.w3schools.com/tags/tag_abbr.asp. Acesso em: 17
+                jul. 2025.</p>
+
         </section>
     </main>
 </body>
+
 </html>
