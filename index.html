@@ -74,7 +74,7 @@
 
         <hr>
 
-        <section>
+        <section class="formularios">
             <h2 id="formularios">Trabalhando com Formulários em HTML</h2>
             <small> <a href="#inicio">Voltar</a></small>
             <ol>
@@ -84,7 +84,7 @@
                         <li>Define o formulário</li>
                         <li>Atributos mais comuns:
                             <ul>
-                                <li><mark>action</mark> :URL para onde os dados do formulário serão enviados</li>
+                                <li><mark>action</mark> :URL para onde os dados do formulário serão enviados.</li>
                                 <li><mark>method</mark> : método de envio (GET ou POST).</li>
                             </ul>
                         </li>
@@ -94,13 +94,13 @@
                 <li>
                     <code>&lt;input&gt;</code>
                     <ul>
-                        <li>Campo de entrada multifuncional (texto, senha, e-mail, número, checkbox, rádio etc.).</li>
+                        <li>Campo de entrada multifuncional (texto, senha, e-mail, número, checkbox, radio etc.).</li>
                         <li>Atributos importantes:
                             <ul>
                                 <li><mark>type</mark> : tipo do input (text, password, email, number, checkbox, radio,
                                     etc.).</li>
                                 <li><mark>name</mark> : nome do campo (usado no backend). </li>
-                                <li><mark>value</mark> : valor enviado</li>
+                                <li><mark>value</mark> : valor enviado.</li>
                                 <li><mark>placeholder</mark> : texto de dica dentro do campo.</li>
                                 <li><mark>requered</mark> : torna o campo obrigatório.</li>
                             </ul>
@@ -152,16 +152,115 @@
                         <li>Como funciona:
                             <ul>
                                 <li>a tag <code>&lt;select&gt;</code> cria o campo de seleção.</li>
-                                <li>a tag <code>&lt;option&gt;</code> define cada uma das opções disponíveis dentro do menu.</li>
+                                <li>a tag <code>&lt;option&gt;</code> define cada uma das opções disponíveis dentro do
+                                    menu.</li>
                             </ul>
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <code>&lt;fieldset&gt; e &lt;legend&gt;</code>
+                    <ul>
+                        <li><code>&lt;fieldset&gt;</code>: é usada para agrupar visualmente elementos relacionados em um
+                            formulário. Ela cria uma caixa com borda ao redor dos campos, ajudando a organizar as
+                            informações e deixar o formulário mais claro para o usuário.</li>
+                        <li><code>&lt;legend&gt;</code>: Usado dentro de <code>&lt;fieldset&gt;</code> para dar um título àquele grupo. </li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <hr>
+        <section class="estrutura">
+            <h2 id="estrutura">Estruturando seu HTML + Formatações</h2>
+            <small> <a href="#inicio">Voltar</a></small>
+            <ol>
+                <li>
+                    <p><span>Títulos</span> <code> &lt;h1&gt; até &lt;h6&gt; </code></p>
+                    <ul>
+                        <li>Representam títulos e subtítulos.</li>
+                        <li><code>&lt;h1&gt;</code> é o mais importante (maior), <code>&lt;h6&gt;</code> o menos
+                            importante (menor).</li>
+                        <li>Usados para organizar o conteúdo por hierarquia.</li>
+                        <li>Exemplos:
+                            <h1>Título em h1</h1>
+                            <h2>Título em h2</h2>
+                            <h3>Título em h3</h3>
+                            <h4>Título em h4</h4>
+                            <h5>Título em h5</h5>
+                            <h6>Título em h6</h6>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Formatação de texto</p>
+                    <ul>
+                        <li><code>&lt;strong&gt;</code>: Deixa o texto em <strong>negrito</strong> com ênfase semântica
+                            (importante para leitores de tela). </li>
+                        <li><code>&lt;b&gt;</code>: Deixa em <strong>negrito</strong>, mas sem significado semântico.
+                        </li>
+                        <li><code>&lt;i&gt;</code>: Texto em <i>itálico</i> com ênfase semântica.</li>
+                        <li><code>&lt;u&gt;</code>: Texto <u>sublinhado</u>.</li>
+                        <li><code>&lt;sub&gt;</code>: Texto em subscrito (abaixo da linha). Ex: H<sub>2</sub>O </li>
+                        <li><code>&lt;sup&gt;</code>: Texto em sobrescrito (acima da linha). Ex: x<sup>2</sup> </li>
+                        <li><code>&lt;del&gt;</code>: Mostra o texto <del>riscado</del> riscado, indicando algo removido
+                            ou corrigido. </li>
+                        <li><code>&lt;blockquote&gt;</code>: Citação de bloco, usada para trechos de textos ou falas
+                            mais longas, geralmente com recuo. </li>
+                        <blockquote>Este é um exemplo de blockquote</blockquote>
+                        <li><code>&lt;mark&gt;</code>: usada para <mark
+                                style="background-color: yellow;">destacar</mark> uma parte do texto, como se você
+                            estivesse
+                            usando um marcador(tipo marca-texto). </li>
+                    </ul>
+                </li>
+                <li>
+                    <p> Organização de layout</p>
+                    <ul>
+                        <li><code>&lt;div&gt;</code>: Contêiner em bloco, usado para agrupar seções maiores ou
+                            estruturar a página.</li>
+                        <li><code>&lt;span&gt;</code>: Contêiner em linha, usado para aplicar estilo ou lógica a um
+                            trecho específico de texto.</li>
+                    </ul>
+                </li>
+                 <li>
+                    <p> Tags desatualizadas </p>
+                    <ul>
+                        <li><code>&lt;font&gt;</code>: Usada para alterar tipo, tamanho ou cor da fonte (hoje se usa CSS).</li>
+                        <li>Evite usar, mas ainda funcionam.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p> Cores no HTML </p>
+                    <p>No HTML, cores podem ser definidas de três formas principais:</p>
+                    <ul>
+                        <li>Nome da cor:
+                            <ul>
+                                <li>Usa nomes reconhecidos pelo navegador.</li>
+                                <li>Exemplo: red, blue, green, black, white.</li>
+                            </ul>
+                        </li>
+                        <li>Hexadecimal:
+                            <ul>
+                                <li>Começa com # e é seguido por 6 dígitos/letras.</li>
+                                <li>Representa a combinação de vermelho, verde e azul (<abbr title="Red, Green, e Blue">RGB</abbr>).</li>
+                                <li>Exemplo: #FF0000 é vermelho.</li>
+                            </ul>
+                        </li>
+                        <li>RGBA (Red, Green, Blue, Alpha):
+                            <ul>
+                                <li>Usa valores entre 0 e 255 para R, G, B.</li>
+                                <li>O "A" (alpha) representa a opacidade (de 0 = transparente até 1 = opaco).</li>
+                            </ul>
+                        </li>
+                    
+                    </ul>
+                </li>
+                   
+                </li>
             </ol>
 
-
         </section>
-        <section></section>
+        <hr>
         <section></section>
         <section></section>
         <section></section>
