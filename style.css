@@ -8,9 +8,11 @@ body{
 }
 
 a{
-  text-decoration: none; 
+  text-decoration: underline;
   color: inherit; 
 }
+
+
 
 p{
     text-align: justify;
@@ -20,6 +22,10 @@ p{
 mark{
    background-color:antiquewhite;
    border-radius: 0.3rem;
+   padding-right: 3px;
+   padding-left: 3px;
+   padding-bottom: 0.2px;
+   padding-top: 0.2px;
 }
 
 code{
@@ -31,6 +37,7 @@ code{
 li{
     color: aliceblue;
     text-align: justify;
+    margin: 2px;
 }
 
 figcaption{
