@@ -1,14 +1,44 @@
+
+
 body{
-    color: rosybrown;
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rosybrown;
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
+header{
+    width: 100%;
+    background-color:  rosybrown;
+    text-align: center;
+    color: white;
+    border: 3px solid lightpink;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 70rem;
+    min-height: 100vh;
+    align-self: center;
+    padding: 1rem 2rem;
+    color: rosybrown;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 1rem;
+
+   
+}
+
+
 a{
-  text-decoration: none; 
+  text-decoration: underline;
   color: inherit; 
 }
 
@@ -20,6 +50,10 @@ p{
 mark{
    background-color:antiquewhite;
    border-radius: 0.3rem;
+   padding-right: 3px;
+   padding-left: 3px;
+   padding-bottom: 0.2px;
+   padding-top: 0.2px;
 }
 
 code{
@@ -31,6 +65,7 @@ code{
 li{
     color: aliceblue;
     text-align: justify;
+    margin: 2px;
 }
 
 figcaption{

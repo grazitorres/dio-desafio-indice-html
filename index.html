@@ -16,8 +16,7 @@
     <header>
         <h1 id="inicio"> Guia de HTML básico</h1>
     </header>
-    <hr>
-    <!-- <code>&lt; &gt;</code>              -->
+   
     <main>
         <section class="indice">
             <h2><i>Índice</i></h2>
@@ -32,6 +31,16 @@
             </ol>
         </section>
         <hr>
+        <section class="sobre">
+            <h2>💡 Sobre este projeto:</h2>
+            <p>Este projeto foi desenvolvido como parte do Bootcamp Santander 2025 WebFront-End, promovido em
+                parceria com a plataforma DIO. A estrutura e os tópicos abordados seguem a proposta de construção de uma
+                aplicação web com HTML e CSS, utilizando os conhecimentos adquiridos ao longo do conteúdo didático
+                apresentado durante o Bootcamp. A ideia é explicar, de forma prática e organizada, as principais tags,
+                recursos e boas práticas aprendidas ao longo da jornada.
+            </p>
+        </section>
+        <hr>
         <section class="intro">
             <h2 id="introducao">Introdução ao HTML na Prática</h2>
             <small> <a href="#inicio">Voltar</a></small>
@@ -40,7 +49,7 @@
                 <strong>marcação</strong> usada para
                 <strong>estruturar</strong> o conteúdo de
                 páginas web. <br>
-                A estrutura do HTML é organizada por tags e atributos (Imagem 1):
+                A estrutura do HTML é organizada por tags e atributos:
                 <br>
             </p>
             <ul>
@@ -164,7 +173,8 @@
                         <li><code>&lt;fieldset&gt;</code>: é usada para agrupar visualmente elementos relacionados em um
                             formulário. Ela cria uma caixa com borda ao redor dos campos, ajudando a organizar as
                             informações e deixar o formulário mais claro para o usuário.</li>
-                        <li><code>&lt;legend&gt;</code>: Usado dentro de <code>&lt;fieldset&gt;</code> para dar um título àquele grupo. </li>
+                        <li><code>&lt;legend&gt;</code>: Usado dentro de <code>&lt;fieldset&gt;</code> para dar um
+                            título àquele grupo. </li>
                     </ul>
                 </li>
             </ol>
@@ -222,10 +232,11 @@
                             trecho específico de texto.</li>
                     </ul>
                 </li>
-                 <li>
+                <li>
                     <p> Tags desatualizadas </p>
                     <ul>
-                        <li><code>&lt;font&gt;</code>: Usada para alterar tipo, tamanho ou cor da fonte (hoje se usa CSS).</li>
+                        <li><code>&lt;font&gt;</code>: Usada para alterar tipo, tamanho ou <font
+                                style="color: lightcoral;">cor </font>da fonte (hoje se usa CSS).</li>
                         <li>Evite usar, mas ainda funcionam.</li>
                     </ul>
                 </li>
@@ -242,7 +253,8 @@
                         <li>Hexadecimal:
                             <ul>
                                 <li>Começa com # e é seguido por 6 dígitos/letras.</li>
-                                <li>Representa a combinação de vermelho, verde e azul (<abbr title="Red, Green, e Blue">RGB</abbr>).</li>
+                                <li>Representa a combinação de vermelho, verde e azul (<abbr
+                                        title="Red, Green, e Blue">RGB</abbr>).</li>
                                 <li>Exemplo: #FF0000 é vermelho.</li>
                             </ul>
                         </li>
@@ -252,26 +264,256 @@
                                 <li>O "A" (alpha) representa a opacidade (de 0 = transparente até 1 = opaco).</li>
                             </ul>
                         </li>
-                    
+
                     </ul>
                 </li>
-                   
+
                 </li>
             </ol>
 
         </section>
         <hr>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section class="midias">
+            <h2 id="midias">Trabalhando com Mídias utilizando HTML</h2>
+            <small> <a href="#inicio">Voltar</a></small>
+
+            <ol>
+                <li>
+                    <code>&lt;img&gt;</code>
+                    <ul>
+                        <li>Usada para exibir imagens.</li>
+                        <li>Tag autossuficiente (não tem fechamento).</li>
+                        <li>Atributos mais comuns:
+                            <ul>
+                                <li><mark>src</mark>: caminho da imagem (obrigatório).</li>
+                                <li><mark>alt</mark> : texto alternativo caso a imagem não carregue (obrigatório para
+                                    acessibilidade). </li>
+                                <li><mark>width/height</mark> : define o tamanho (opcional).</li>
+                                <li><mark>title</mark> : serve para mostrar um texto quando o usuário passa o mouse
+                                    sobre a imagem. Esse
+                                    texto aparece como uma caixinha flutuante, tipo uma "dica" ou "informação extra".
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <code>&lt;audio&gt;</code>
+                    <ul>
+                        <li>Usada para incorporar áudio.</li>
+                        <li>Pode conter a tag <code>&lt;source&gt; </code>para oferecer diferentes formatos de arquivo.
+                        </li>
+                        <li>Dentro da tag, escreva um aviso como "Seu navegador não tem suporte para este áudio " caso a
+                            pessoa esteja usando um navegador antigo e o áudio não funcione.</li>
+                        <li>Atributos/tags mais comuns:
+                            <ul>
+                                <li><mark>src</mark>: caminho da áudio (pode ser usado direto na tag ou via
+                                    <code>&lt;source&gt;</code>).
+                                </li>
+                                <li><mark>controls</mark> : exibe os controles de reprodução (play, pause, etc.). </li>
+                                <li><mark>autoplay</mark> : começa a tocar automaticamente (não recomendado sem
+                                    interação).</li>
+                                <li><mark>loop</mark> : repete o áudio.</li>
+                                <li><mark>muted</mark> : começa mudo.</li>
+                            </ul>
+                        </li>
+                        <li>Observação: Usar o <code>src</code> direto é simples, mas limitado a um único formato.
+                            Já o uso de
+                            <code>&lt;source&gt;</code> é mais recomendado, pois permite compatibilidade com diferentes
+                            navegadores e ainda
+                            dá a opção de mostrar uma mensagem se o áudio não for suportado.
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <code>&lt;video&gt;</code>
+                    <ul>
+                        <li>Usada para incorporar vídeos.</li>
+                        <li>Também pode usar a tag <code>&lt;source&gt;</code> e colocar a mensagem de aviso caso o
+                            navegador
+                            não tenha suporte para o vídeo.</li>
+                        <li>Atributos mais comuns:
+                            <ul>
+                                <li><mark>src</mark>: caminho do vídeo.</li>
+                                <li><mark>controls</mark> : mostra os botões de controle.</li>
+                                <li><mark>width/height</mark> : define o tamanho do vídeo.</li>
+                                <li><mark>autoplay</mark>, <mark>loop</mark>,
+                                    <mark>muted</mark>, <mark>poster</mark> (imagem de capa antes de iniciar).
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <code>&lt;track&gt;</code>
+                    <ul>
+                        <li>Usada dentro da tag <code>&lt;video&gt;</code> ou <code>&lt;audio&gt;</code> para adicionar
+                            legendas, transcrições ou descrições.</li>
+                        <li>Atributos importantes:
+                            <ul>
+                                <li><mark>src</mark>: caminho do arquivo (.vtt ou .rst).</li>
+                                <li><mark>kind</mark> : tipo de legenda (<code>subtitles</code>, <code>captions</code>,
+                                    <code>descriptions</code>, etc).
+                                </li>
+                                <li><mark>srlang</mark> : idioma.</li>
+                                <li><mark>label</mark> : nome exibido para o usuário.</li>
+                                <li><mark>default</mark> : define como padrão.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <code>&lt;iframe&gt;</code>
+                    <ul>
+                        <li>Usada para incorporar conteúdo externo, como vídeos do YouTube, mapas, sites, etc.</li>
+                        <li>É uma janela dentro da página.</li>
+                        <li>Atributos importantes:
+                            <ul>
+                                <li><mark>src</mark>: URL do conteúdo incorporado.</li>
+                                <li><mark>width/height</mark> : dimensões.</li>
+                                <li><mark>title</mark> : acessibilidade</li>
+                                <li><mark>allowfullscreen</mark> : permite o conteúdo ser exibido em tela cheia.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <p><code>&lt;figure&gt;</code> e <code>&lt;figcaption&gt;</code></p>
+                    <ul>
+                        <li><code>&lt;figure&gt;</code> é usada para agrupar conteúdo de mídia com sua legenda.</li>
+                        <li><code>&lt;figcaption&gt;</code> é usada dentro de <code>&lt;figure&gt;</code> para adicionar
+                            uma legenda descritiva. </li>
+                        <li>Ajuda a organizar melhor imagens, vídeos, gráficos ou trechos de código com descrição.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Um exemplo prático pode ser observado na Imagem 2 da anatomia de uma tag, utilizada no
+                tópico de Introdução ao HTML. Nesse caso, o código usa a tag
+                <code>&lt;figure&gt;</code> para agrupar a imagem e a
+                legenda, e a tag <code>&lt;figcaption&gt;</code> para exibir, logo abaixo da imagem, uma
+                descrição
+                explicativa.
+            </p>
+            <figure>
+                <img src="./img/codigo-img.png" width="750" alt="Estrutura de uma tag e seus atributos">
+                <figcaption>Exemplo do código usado para inserir a imagem da anatomia de uma tag,
+                    localizada no tópico introdutório sobre HTML. </a>
+                </figcaption>
+            </figure>
+
+        </section>
+        <hr>
+
+        <section class="tabelas">
+            <h2 id="tabelas">Criando Tabelas com HTML</h2>
+            <small> <a href="#inicio">Voltar</a></small>
+
+            <ol>
+                <li>
+                    <p>Tags principais de uma Tabela</p>
+                    <ul>
+                        <li><code>&lt;table&gt;</code>Cria a tabela.</li>
+                        <li><code>&lt;tr&gt;</code> (table row): Representa uma linha da tabela.</li>
+                        <li><code>&lt;td&gt;</code> (table data): Representa uma célula de dados comum dentro de uma
+                            linha.</li>
+                        <li><code>&lt;th&gt;</code>(table header): Representa uma célula de cabeçalho, geralmente vem em
+                            negrito e centralizada por padrão.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <p>Estrutura semântica com agrupamentos</p>
+                    <ul>
+                        <li><code>&lt;thead&gt;</code>: Agrupa o cabeçalho da tabela.</li>
+                        <li><code>&lt;tbody&gt;</code>: Agrupa o corpo (conteúdo principal) da tabela.</li>
+                        <li><code>&lt;tfoot&gt;</code>: Agrupa o rodapé, útil para somas, totais, observações.</li>
+                    </ul>
+                    <p>Esses elementos ajudam na organização semântica e melhoram o suporte a acessibilidade.</p>
+                </li>
+
+                <li>
+                    <p>Legenda</p>
+                    <ul>
+                        <li><code>&lt;caption&gt;</code>: Adiciona um título descritivo para a tabela. Fica geralmente
+                            acima da tabela.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <p>Mesclar células</p>
+                    <ul>
+                        <li><code>colspan="n"</code>: Mescla células horizontalmente (colunas).</li>
+                        <li><code>rowspan="n"</code> Mescla células verticalmente (linhas).</li>
+                    </ul>
+                </li>
+                <br>
+            </ol>
+        </section>
+        <hr>
+        <section class="semantica">
+            <h2 id="semantica">Entendendo HTML Semântico</h2>
+            <small> <a href="#inicio">Voltar</a></small>
+            <p>O HTML5 trouxe avanços importantes em relação
+                ao HTML4, especialmente no que diz respeito à organização, semântica e acessibilidade do conteúdo nas
+                páginas web. Antes, era comum o uso excessivo de <code>&lt;div&gt;</code>
+                com classes diferentes para representar seções da página, o que prejudicava a acessibilidade e
+                dificultava a leitura do código por leitores de tela. Com a nova versão, surgiram elementos semânticos
+                que deixam o código mais claro e acessível. Além disso, foram definidos padrões como a WCAG (Web Content
+                Accessibility Guidelines) e o uso de atributos ARIA para melhorar a acessibilidade.
+            </p>
+            <ul>
+                <li>
+                    <p>Principais tags semânticas:</p>
+                    <ul>
+                        <li><code>&lt;main&gt;</code>: Define o conteúdo principal da página,
+                            que é exclusivo e diretamente relacionado ao propósito central daquele documento.</li>
+                        <li><code>&lt;header&gt;</code>: Representa o cabeçalho de uma página ou de uma seção. Pode
+                            conter títulos, logotipo, menu de navegação, etc.</li>
+                        <li><code>&lt;footer&gt;</code>: Indica o rodapé da página ou de uma seção. Costuma incluir
+                            informações como direitos autorais, links úteis ou dados de contato.</li>
+                        <li><code>&lt;nav&gt;</code>: Utilizado para agrupar links de navegação que apontam para outras
+                            partes do site ou para outras páginas.</li>
+                        <li><code>&lt;section&gt;</code>: Agrupa conteúdo tematicamente relacionado. É ideal para
+                            dividir uma página em partes significativas, como tópicos ou capítulos.</li>
+                        <li><code>&lt;article&gt;</code>: Representa um conteúdo independente e autocontido, como uma
+                            notícia, post de blog ou comentário.</li>
+                        <li><code>&lt;aside&gt;</code>: Indica conteúdo complementar, como uma barra lateral ou uma dica
+                            relacionada ao conteúdo principal.</li>
+                        <li><code>&lt;blockquote&gt;</code>: Usado para citações longas, exibidas em bloco. Indica que o
+                            conteúdo foi retirado de outra fonte.</li>
+                        <li><code>&lt;q&gt;</code>: Representa citações curtas dentro de uma linha. O navegador
+                            normalmente coloca aspas automaticamente.</li>
+                        <li><code>&lt;figure&gt;</code>: Agrupa elementos de mídia (como imagens, gráficos ou vídeos)
+                            com legenda.</li>
+                        <li><code>&lt;figcaption&gt;</code>:Tag usada dentro do <code>&lt;figure&gt;</code> para
+                            fornecer a legenda ou descrição da mídia.</li>
+                        <li><code>&lt;picture&gt;</code>: Permite oferecer diferentes versões de uma imagem para
+                            diferentes tamanhos de tela ou dispositivos, sendo essencial em layouts responsivos.</li>
+
+
+                    </ul>
+                </li>
+            </ul>
+
+        </section>
 
         <hr>
         <section class="referencias">
-            <h3>Referências</h3>
-            <p>W3SCHOOLS. HTML abbr Tag. Disponível em: https://www.w3schools.com/tags/tag_abbr.asp. Acesso em: 17
-                jul. 2025.</p>
-
+            <h3>Referência</h3>
+            <p>W3SCHOOLS. HTML Element Reference. Disponível em: https://www.w3schools.com/tags/default.asp. Acesso em:
+                17 jul. 2025.
+            </p>
         </section>
+        <hr>
+        <footer>
+            <p>📌 Projeto desenvolvido como parte do Bootcamp Santander 2025 Web Front-End, promovido em parceria com a
+                DiO.</p>
+        </footer>
     </main>
 </body>
 
