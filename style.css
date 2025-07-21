@@ -1,3 +1,4 @@
+/* ====== Reset e configurações gerais ====== */
 html{
     width: 100%;
     margin: 0;
@@ -18,6 +19,7 @@ body{
     font-style: normal;
 }
 
+/* ====== Estrutura principal ====== */
 header{
     width: 100%;
     background-color:  rosybrown;
@@ -48,6 +50,7 @@ footer{
     border: 3px solid lightpink;
 }
 
+/* ====== Elementos gerais ====== */
 img{
     max-width: 100%;
 }
@@ -76,6 +79,19 @@ p{
 a, p{
     overflow-wrap: break-word;
 }
+
+li{
+    color: aliceblue;
+    text-align: justify;
+    margin: 2px;
+}
+
+figcaption{
+    font-size: 0.8rem;
+
+}
+
+/* ====== Estilização de elementos específicos ====== */
 mark{
    background-color:antiquewhite;
    border-radius: 0.3rem;
@@ -91,17 +107,6 @@ code{
     border-radius: 0.3rem;
 }
 
-li{
-    color: aliceblue;
-    text-align: justify;
-    margin: 2px;
-}
-
-figcaption{
-    font-size: 0.8rem;
-
-}
-
 .paragFooter{
     color: black;
     padding: 0.8rem 1rem;
@@ -110,6 +115,9 @@ figcaption{
     
 }
 
+/* ====== Responsividade ====== */
+
+/* Celulares muito pequenos (até 320px) */
 @media (max-width: 320px){
      h1{
         font-size: 1.3rem;
@@ -121,6 +129,7 @@ figcaption{
 
 }
 
+/* Celulares padrão (até 425px) */
 @media (max-width: 425px){
     h1{
         font-size: 1.5rem;
@@ -144,6 +153,7 @@ figcaption{
 
 }
 
+/* Tablets (até 768px) */
 @media (max-width: 768px){
     h1{
         font-size: 1.5rem;
