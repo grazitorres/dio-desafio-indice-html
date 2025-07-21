@@ -16,7 +16,7 @@
     <header>
         <h1 id="inicio"> Guia de HTML básico</h1>
     </header>
-   
+
     <main>
         <section class="indice">
             <h2><i>Índice</i></h2>
@@ -31,16 +31,7 @@
             </ol>
         </section>
         <hr>
-        <section class="sobre">
-            <h2>💡 Sobre este projeto:</h2>
-            <p>Este projeto foi desenvolvido como parte do Bootcamp Santander 2025 WebFront-End, promovido em
-                parceria com a plataforma DIO. A estrutura e os tópicos abordados seguem a proposta de construção de uma
-                aplicação web com HTML e CSS, utilizando os conhecimentos adquiridos ao longo do conteúdo didático
-                apresentado durante o Bootcamp. A ideia é explicar, de forma prática e organizada, as principais tags,
-                recursos e boas práticas aprendidas ao longo da jornada.
-            </p>
-        </section>
-        <hr>
+
         <section class="intro">
             <h2 id="introducao">Introdução ao HTML na Prática</h2>
             <small> <a href="#inicio">Voltar</a></small>
@@ -392,19 +383,22 @@
                     </ul>
                 </li>
             </ol>
-            <p>Um exemplo prático pode ser observado na Imagem 2 da anatomia de uma tag, utilizada no
+            <p class="hidden">Um exemplo prático pode ser observado na Imagem 2 da anatomia de uma tag, utilizada no
                 tópico de Introdução ao HTML. Nesse caso, o código usa a tag
                 <code>&lt;figure&gt;</code> para agrupar a imagem e a
                 legenda, e a tag <code>&lt;figcaption&gt;</code> para exibir, logo abaixo da imagem, uma
                 descrição
                 explicativa.
             </p>
-            <figure>
-                <img src="./img/codigo-img.png" width="750" alt="Estrutura de uma tag e seus atributos">
-                <figcaption>Exemplo do código usado para inserir a imagem da anatomia de uma tag,
-                    localizada no tópico introdutório sobre HTML. </a>
-                </figcaption>
-            </figure>
+            <div class="hidden">
+                <figure>
+                    <img src="./img/codigo-img.png" width="750" alt="Estrutura de uma tag e seus atributos">
+                    <figcaption>Exemplo do código usado para inserir a imagem da anatomia de uma tag,
+                        localizada no tópico introdutório sobre HTML. </a>
+                    </figcaption>
+                </figure>
+            </div>
+
 
         </section>
         <hr>
@@ -510,11 +504,23 @@
             </p>
         </section>
         <hr>
-        <footer>
-            <p>📌 Projeto desenvolvido como parte do Bootcamp Santander 2025 Web Front-End, promovido em parceria com a
-                DiO.</p>
-        </footer>
+        <section class="sobre">
+            <h2>💡 Sobre este projeto:</h2>
+            <p>Este projeto foi desenvolvido como parte do Bootcamp Santander 2025 WebFront-End, promovido em
+                parceria com a plataforma DIO. A estrutura e os tópicos abordados seguem a proposta de construção de uma
+                aplicação web com HTML e CSS, utilizando os conhecimentos adquiridos ao longo do conteúdo didático
+                apresentado durante o Bootcamp. A ideia é explicar, de forma prática e organizada, as principais tags,
+                recursos e boas práticas aprendidas ao longo da jornada.
+            </p>
+        </section>
     </main>
+
+    <footer>
+        <p class="paragFooter">📌 Projeto desenvolvido como parte do Bootcamp Santander 2025 Web Front-End, promovido em
+            parceria com a
+            DIO.
+        </p>
+    </footer>
 </body>
 
 </html>
