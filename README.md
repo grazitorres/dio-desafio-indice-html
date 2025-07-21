@@ -45,5 +45,8 @@ para outras pessoas iniciantes que queiram revisar os fundamentos do HTML e ter 
 
 Sinta-se à vontade para explorar o código, adaptar, testar e aprender!
 
+## 🌐 Projeto Online
+Veja o projeto funcionando no navegador: [Clique aqui](https://grazitorres.github.io/dio-desafio-indice-html/)
+
 ## ✍️ Autora
 Desenvolvido por **Graziele Torres** como forma de consolidar os conhecimentos adquiridos no bootcamp e ir além da proposta original, unindo teoria e prática em HTML e CSS.
