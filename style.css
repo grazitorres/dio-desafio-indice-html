@@ -1,8 +1,13 @@
-
+html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 body{
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -24,22 +29,43 @@ header{
 main{
     display: flex;
     flex-direction: column;
-    width: 70rem;
+    width: 100%;
+    max-width: 70rem;
     min-height: 100vh;
     align-self: center;
-    padding: 1rem 2rem;
+    padding: 0.3rem 1.5rem;
     color: rosybrown;
     background-color: black;
     border: 2px solid black;
     border-radius: 1rem;
-
-   
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color:rgba(207, 139, 139, 0.501);
+    border: 3px solid lightpink;
+}
+
+img{
+    max-width: 100%;
+}
 
 a{
   text-decoration: underline;
   color: inherit; 
+}
+
+hr{
+    border: 1px solid lightpink;
+    width: 100%; 
+    margin: 1rem 0;
+    box-sizing: border-box;
+}
+
+section{
+    padding: 1rem 0.5rem;
 }
 
 p{
@@ -47,6 +73,9 @@ p{
     color: aliceblue;
 }
 
+a, p{
+    overflow-wrap: break-word;
+}
 mark{
    background-color:antiquewhite;
    border-radius: 0.3rem;
@@ -70,5 +99,54 @@ li{
 
 figcaption{
     font-size: 0.8rem;
+
+}
+
+.paragFooter{
+    color: black;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+@media (max-width: 320px){
+     h1{
+        font-size: 1.3rem;
+    }
+
+     li,p, code, mark{
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (max-width: 425px){
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-size: 1.1rem;
+    }
+
+    li,p,code,mark {
+        font-size: 0.8rem;
+    }
+
+    section{
+        margin: 0;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px){
+    h1{
+        font-size: 1.5rem;
+    }
 
 }
